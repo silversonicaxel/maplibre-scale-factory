@@ -4,7 +4,7 @@ import { imperialScale, metricScale } from "./utils";
 
 export interface MapLibreScaleFactoryOptions {
 	maxWidth?: number;
-	clipLabel?: boolean;
+	withLabelOverflow?: boolean;
 }
 
 interface ScaleResult {
@@ -19,11 +19,11 @@ export class MapLibreScaleFactory implements IControl {
 	#imperialBar?: HTMLElement;
 	#isRightSide: boolean = false;
 	readonly #maxWidth: number;
-	readonly #clipLabel: boolean;
+	readonly #withLabelOverflow: boolean;
 
 	constructor(options: MapLibreScaleFactoryOptions = {}) {
 		this.#maxWidth = options.maxWidth || 120;
-		this.#clipLabel = options.clipLabel || true;
+		this.#withLabelOverflow = options.withLabelOverflow || false;
 	}
 
 	#createContainer(): HTMLDivElement {
@@ -43,7 +43,7 @@ export class MapLibreScaleFactory implements IControl {
 
   	#buildBar(system: "metric" | "imperial"): [HTMLElement] {
 		const bar = document.createElement("div");
-		const clipClass = this.#clipLabel ? " scale-factory-bar-clip" : "";
+		const clipClass = this.#withLabelOverflow ? "" : " scale-factory-bar-clip";
 		bar.className = `scale-factory-bar scale-factory-bar--${system}${clipClass}`;
 		bar.style.width = `${this.#maxWidth}px`;
 
@@ -102,7 +102,7 @@ export class MapLibreScaleFactory implements IControl {
 				this.#container?.classList.add("scale-factory-container--align-right");
 			}
 
-			if (!this.#clipLabel && this.#isRightSide) {
+			if (this.#withLabelOverflow && this.#isRightSide) {
 				this.#metricBar?.classList.add("scale-factory-bar--overflow-left");
 				this.#imperialBar?.classList.add("scale-factory-bar--overflow-left");
 			}

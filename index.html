@@ -48,7 +48,8 @@
             metadata: { name: "OpenStreetMap" }
         });
 
-        map.addControl(new MapLibreScaleFactory({ clipLabel: false }), "bottom-left");
+        const scaleFactory = new MapLibreScaleFactory({ withLabelOverflow: true });
+        map.addControl(scaleFactory, "bottom-left");
     });
   </script>
 </body>
