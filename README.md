@@ -26,6 +26,9 @@ npm install maplibre-scale-factory
 The example below shows how to use the MapLibre Scale Factory to display metric and imperial scale bars.
 
 ```javascript
+import { MapLibreScaleFactory } from './src/index.ts';
+import "maplibre-scale-factory/style.css";
+
 const scaleFactory = new MapLibreScaleFactory({ withLabelOverflow: false });
 map.addControl(scaleFactory, "bottom-left");
 ```

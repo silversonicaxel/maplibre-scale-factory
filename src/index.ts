@@ -1,4 +1,3 @@
-import './index.css';
 import type { IControl, Map } from "maplibre-gl";
 import { imperialScale, metricScale } from "./utils";
 
