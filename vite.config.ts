@@ -1,0 +1,27 @@
+import { dirname, resolve } from 'path';
+import { defineConfig } from 'vite';
+import { fileURLToPath } from 'url';
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+
+export default defineConfig({
+  build: {
+    emptyOutDir: true,
+    lib: {
+      entry: resolve(__dirname, 'src/index.ts'),
+      fileName: 'maplibre-scale-factory',
+      formats: ['es', 'umd'],
+      name: 'MapLibreScaleFactory',
+    },
+    minify: 'esbuild',
+    rollupOptions: {
+      external: ['maplibre-gl'],
+      output: {
+        globals: {
+          'maplibre-gl': 'maplibregl',
+        },
+      },
+    },
+    sourcemap: true,
+  },
+});
