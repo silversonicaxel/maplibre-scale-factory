@@ -1,0 +1,38 @@
+.scale-factory-container {
+	display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    pointer-events: none;
+    user-select: none;
+}
+.scale-factory-container--align-right {
+    align-items: flex-end;
+}
+
+.scale-factory-bar {
+    display: flex;
+    align-items: center;
+    min-width: 20px;
+    height: 26px;
+    padding: 0 8px;
+    background: rgba(200, 210, 200, 0.55);
+    backdrop-filter: blur(4px);
+    transition: width 0.15s ease;
+}
+.scale-factory-bar--overflow-left {
+    flex-direction: row-reverse;
+}
+
+.scale-factory-bar-clip {
+    overflow: hidden;
+}
+
+.scale-factory-label {
+    font-size: 14px;
+    font-weight: 400;
+    white-space: nowrap;
+    color: #2c3a47;
+    line-height: 1;
+}
