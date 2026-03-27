@@ -4,7 +4,8 @@ Plugin to display metric and imperial scales in MapLibre GL JS.
 
 ## Features
 
-- Scale
+- Scales in metric and imperial units with optional label overflow
+- Custom max width
 
 ## Installation
 
@@ -26,7 +27,7 @@ npm install maplibre-scale-factory
 The example below shows how to use the MapLibre Scale Factory to display metric and imperial scale bars.
 
 ```javascript
-import { MapLibreScaleFactory } from './src/index.ts';
+import { MapLibreScaleFactory } from "maplibre-scale-factory";
 import "maplibre-scale-factory/style.css";
 
 const scaleFactory = new MapLibreScaleFactory({ withLabelOverflow: false });
