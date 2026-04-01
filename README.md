@@ -47,6 +47,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tbody>
     <tr>
+      <td align="center" valign="top" width="14.28%"><a href="http://www.alessandrorabitti.com/"><img src="https://avatars.githubusercontent.com/u/6851815?v=4?s=100" width="100px;" alt="Alessandro Rabitti"/><br /><sub><b>Alessandro Rabitti</b></sub></a><br /><a href="https://github.com/silversonicaxel/maplibre-scale-factory/commits?author=silversonicaxel" title="Code">💻</a> <a href="#a11y-silversonicaxel" title="Accessibility">️️️️♿️</a> <a href="https://github.com/silversonicaxel/maplibre-scale-factory/commits?author=silversonicaxel" title="Documentation">📖</a></td>
       <td align="center" valign="top" width="14.28%"><a href="http://studiorabota.com"><img src="https://avatars.githubusercontent.com/u/8339389?v=4?s=100" width="100px;" alt="Vincent Kranendonk"/><br /><sub><b>Vincent Kranendonk</b></sub></a><br /><a href="#design-studiorabota" title="Design">🎨</a> <a href="#ideas-studiorabota" title="Ideas, Planning, & Feedback">🤔</a></td>
     </tr>
   </tbody>

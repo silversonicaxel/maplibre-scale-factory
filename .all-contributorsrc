@@ -8,6 +8,17 @@
   "commitConvention": "angular",
   "contributors": [
     {
+      "login": "silversonicaxel",
+      "name": "Alessandro Rabitti",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6851815?v=4",
+      "profile": "http://www.alessandrorabitti.com/",
+      "contributions": [
+        "code",
+        "a11y",
+        "doc"
+      ]
+    },
+    {
       "login": "studiorabota",
       "name": "Vincent Kranendonk",
       "avatar_url": "https://avatars.githubusercontent.com/u/8339389?v=4",
