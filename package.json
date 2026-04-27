@@ -1,6 +1,6 @@
 {
   "name": "maplibre-scale-factory",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "type": "module",
   "main": "./dist/maplibre-scale-factory.umd.cjs",
   "module": "./dist/maplibre-scale-factory.js",
